@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pl" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>flex2</title>
+    <style>
+      body{padding: 0px;
+           margin: 0px;
+           font-family: monospace;}
+
+      #góra{display: flex;
+            width: 100%;
+            height: 300px;}
+
+      #a{height: 100%;
+         width: 40%;
+         background-color: Cyan;}
+
+      #b{height: 100%;
+         width: 60%;
+         background-color: DeepSkyBlue;}
+
+      #góra > div{display: flex;
+                 align-items: center;
+                 justify-content: center;
+                 font-size: 200%;
+                 color: white;}
+
+     #linki{width: 100%;
+            height: 50px;
+            background-color: DimGray;
+            display: flex;
+            align-items: center;
+            justify-content: space-around;}
+
+    .link{background-color: GhostWhite;
+          border: solid 2px black;
+          width: 100px;
+          height: 60%;
+          font-size: 130%;
+          display: flex;
+          align-items: center;
+          justify-content: center;}
+     a{text-decoration: none;
+       color: black;}
+
+     #centrum{display: flex;
+              width: 100%;
+              height: 500px;}
+
+       #c{height: 100%;
+          width: 60%;
+          background-color: SlateBlue;}
+
+       #d{height: 100%;
+          width: 40%;
+          background-color: Navy;}
+
+       #centrum > div{display: flex;
+                  align-items: center;
+                  justify-content: center;
+                  font-size: 200%;
+                  color: white;}
+
+      footer{background-color: DimGray;
+             color: GhostWhite;
+             display: flex;
+             align-items: center;
+             flex-direction: row-reverse;
+             width: 100%;
+             height: 87px;
+             font-size: 130%;}
+
+    </style>
+  </head>
+  <body>
+
+    <div id="góra">
+      <div id="a">40%</div>
+      <div id="b">60%</div>
+    </div>
+
+    <div id="linki">
+      <div class="link"><a href="https://www.pornhub.com">link1</a></div>
+      <div class="link"><a href="https://www.wp.pl">link2</a></div>
+      <div class="link"><a href="https://www.o2.pl">link3</a></div>
+      <div class="link"><a href="https://www.zsk.poznan.pl/">link4</a></div>
+    </div>
+
+    <div id="centrum">
+      <div id="c">60%</div>
+      <div id="d">40%</div>
+    </div>
+
+    <footer>Wykonał: Mikołaj Sarnecki 4B</footer>
+
+  </body>
+</html>
