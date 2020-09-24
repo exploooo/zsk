@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8"/>
+    <title>html</title>
+    <style>
+        #blok_główny{display: flex;
+                     width: 400px;
+                     height: 170px;
+                     border: 1px solid black;
+                     justify-content: center;}
+        #blok_główny div{width:170px;
+                         height: 170px;
+                         border: 1px solid black;}
+        #blok_główny div:nth-of-type(2){flex-shrink: 2;}
+        #blok_główny div:nth-of-type(1){flex-shrink: 1;}
+        #blok_główny div:nth-of-type(3){flex-shrink: 5;}
+        #jeden{background-color: coral;}
+        #dwa{background-color: lightblue;}
+        #trzy{background-color: khaki;}
+    </style>
+</head>
+<body>
+    <div id="blok_główny">
+        <div id="jeden"></div>
+        <div id="dwa"></div>
+        <div id="trzy"></div>
+    </div>    
+</body>
+</html>
