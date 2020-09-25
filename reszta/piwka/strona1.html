@@ -55,6 +55,12 @@
         .d{background-image: url(tatra.png);
             background-size: 100% 100%;
             border-top:solid 2px chartreuse;}
+        #kontener2{width:100%;
+                   height: 40%;
+                   background-image: url(harnas.jpg);
+                   background-size: 100% 100%;
+                   display:flex;
+                   border-top:solid 2px chartreuse;}
         #pole{background-color: firebrick;
               display: flex;
               flex-direction: column;
@@ -77,6 +83,7 @@
         <div class="c" onmouseover="kustosz()" onmouseout="ukryj()"><a href="https://www.piwo.org/forums/topic/24687-kustosz-z-biedronki/"></a></div>
         <div class="d" onmouseover="tatra()" onmouseout="ukryj()"><a href="https://tatra.pl/"></a></div>
     </div>
+    <div id="kontener2" onmouseover="harnasiek()" onmouseout="ukryj()"><a href="http://piwoharnas.pl/bramka/"></a></div>
     <div id="pole">
         <p class="hidden"></p>
         <p>Po więcej informacji kliknij na obrazek...</p>
@@ -88,28 +95,35 @@
             document.querySelector("#pole > p").classList.toggle("hidden");
             document.querySelector(".a").classList.toggle("zaznaczone");
             var paragraf = document.querySelector("#pole > p");
-            paragraf.innerHTML = "Najlepsze piwko świata, bijące na głowe swoją chmielową siostrę. <br> Polecam każdemu, smakuje wyśmienicie zawsze i wszędzie"
+            paragraf.innerHTML = "Najlepsze piwko świata, bijące na głowe swoją chmielową siostrę. <br> Polecam każdemu, smakuje wyśmienicie zawsze i wszędzie";
         }
 
         function stern(){
             document.querySelector("#pole > p").classList.toggle("hidden");
             document.querySelector(".b").classList.toggle("zaznaczone");
             var paragraf = document.querySelector("#pole > p");
-            paragraf.innerHTML = "Tylko dla weteranów - mocny smak puszki i charakterny smak przypasują jedynie wybranym"
+            paragraf.innerHTML = "Tylko dla weteranów - mocny smak puszki i charakterny smak przypasują jedynie wybranym";
         }
 
         function kustosz(){
             document.querySelector("#pole > p").classList.toggle("hidden");
             document.querySelector(".c").classList.toggle("zaznaczone");
             var paragraf = document.querySelector("#pole > p");
-            paragraf.innerHTML = "Budżetowa opcja w wielu wydaniach - Meksykańska Tequila, Puszkowa Malina, <br> Jasne pełne, oraz mocne arcydzieło w ciemnej puszce. RIP Kustosz jabłko"
+            paragraf.innerHTML = "Budżetowa opcja w wielu wydaniach - Meksykańska Tequila, Puszkowa Malina, <br> Jasne pełne, oraz mocne arcydzieło w ciemnej puszce. RIP Kustosz jabłko";
         }
 
         function tatra(){
             document.querySelector("#pole > p").classList.toggle("hidden");
             document.querySelector(".d").classList.toggle("zaznaczone");
             var paragraf = document.querySelector("#pole > p");
-            paragraf.innerHTML= "Przez wielu pogardzana, Tatra posiada charakterystyczny smak. <br> Niewielu zasmakuje, jednak to wlaśnie oni będą elitą pijactwa."
+            paragraf.innerHTML= "Przez wielu pogardzana, Tatra posiada charakterystyczny smak. <br> Niewielu zasmakuje, jednak to wlaśnie oni będą elitą pijactwa.";
+        }
+
+        function harnasiek(){
+            document.querySelector("#pole > p").classList.toggle("hidden");
+            document.querySelector("#kontener2").classList.toggle("zaznaczone");
+            var paragraf = document.querySelector("#pole > p");
+            paragraf.innerHTML= "Napój króla gór, szanowana i respektowana waluta warciańska. Jest boski w swym smaku co dodaje sił i motywacji do życia.";
         }
 
         function ukryj(){
@@ -118,6 +132,7 @@
             document.querySelector(".b").classList.remove("zaznaczone");
             document.querySelector(".c").classList.remove("zaznaczone");
             document.querySelector(".d").classList.remove("zaznaczone");
+            document.querySelector("#kontener2").classList.remove("zaznaczone");
         }
     </script>
 </body>
