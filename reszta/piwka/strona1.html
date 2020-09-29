@@ -43,21 +43,21 @@
         .zaznaczone{border-bottom:solid 10px chartreuse;}
         a{width: 100%;
           height: 100%;}
-        .a{background-image: url(perła.jpg);
+        .a{background-image: url(Zasoby/perła.jpg);
            background-size: 100% 100%;
            border-top:solid 2px chartreuse;}
-        .b{background-image: url(stern.jpg);
+        .b{background-image: url(Zasoby/stern.jpg);
             background-size: 100% 100%;
             border-top:solid 2px chartreuse;}
-        .c{background-image: url(kustosz.jpg);
+        .c{background-image: url(Zasoby/kustosz.jpg);
             background-size: 100% 100%;
             border-top:solid 2px chartreuse;}
-        .d{background-image: url(tatra.png);
+        .d{background-image: url(Zasoby/tatra.png);
             background-size: 100% 100%;
             border-top:solid 2px chartreuse;}
         #kontener2{width:100%;
                    height: 40%;
-                   background-image: url(harnas.jpg);
+                   background-image: url(Zasoby/harnas.jpg);
                    background-size: 100% 100%;
                    display:flex;
                    border-top:solid 2px chartreuse;}
@@ -75,7 +75,7 @@
 </head>
 <body>
   <div id=całość>
-    <iframe src="muzyka.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe> 
+    <iframe src="Zasoby/muzyka.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe>
     <header>FAJNE PIFKA ÓGÓŁEM</header>
     <div id="kontener">
         <div class="a" onmouseover="perła()" onmouseout="ukryj()"><a href="http://perla.pl/produkty/perla-export/"></a></div>
@@ -133,7 +133,8 @@
             document.querySelector(".c").classList.remove("zaznaczone");
             document.querySelector(".d").classList.remove("zaznaczone");
             document.querySelector("#kontener2").classList.remove("zaznaczone");
-        }
+          }
+
     </script>
 </body>
 </html>
