@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <title>Pedały</title>
+    <style>
+        @font-face {
+            font-family: foncik;
+            src: url(foncik/font.ttf);
+        }
+        html{height: 100%;
+             font-family: foncik;}
+        body{background-image: url(tło_strony.png);
+             background-size: 100% 100%;
+             display: flex;
+             margin: 0 0 0 0}
+        #kontener{height: 75%;
+                  width: 80%;
+                  background-image: url(tło.jpg);
+                  background-size: 100% ;
+                  margin: 0 auto;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  flex-direction: column;
+                  border: solid 2px black;
+                  border-radius: 2%;}
+        #Zdjęcia{display: flex;
+                 justify-content: space-evenly;}
+        #podpisy{width: 100%;
+                 display:flex;
+                 justify-content: space-around;}
+        h1{font-size: 500%;
+           margin: 0px 0px;}
+        h2{font-size: 300%;}
+        p{font-size: 200%;}
+        img{border: solid 2px black;
+            border-radius: 2%;}
+    </style>
+</head>
+<body>
+    <iframe src="muzyka.mp3" allow="autoplay" style="display:none" id="iframeAudio"></iframe> 
+    <div id="kontener">
+        <h1>POSZUKIWANI!</h1>
+        <h2>Straszni Homosie</h2>
+        <div id="Zdjęcia">
+            <img src="klaud.jpg" alt="gej1" width="40%" height="500">
+            <img src="osiński.jpg" alt="gej2" width="40%" heigth="500">
+        </div>
+        <div id="podpisy">
+            <p>Klavdij "Ceglak" Rozenov</p>
+            <p>Matthew "Owsiak" Osinski</p>
+        </div>
+        <h2>Nagroda 2000$</h2>
+    </div>
+    
+</body>
+</html>
